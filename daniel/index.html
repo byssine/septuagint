@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel - The Septuagint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tooplate-2170-aperture.css">
+</head>
+<body>
+
+  <!-- ============================================
+       THE FRAME — Persistent UI Border
+       ============================================ -->
+  <div class="frame" aria-hidden="true">
+    <div class="frame__border"></div>
+    <div class="frame__corner frame__corner--tr"></div>
+    <div class="frame__corner frame__corner--bl"></div>
+    <div class="frame__corner frame__corner--br"></div>
+  </div>
+
+  <!-- Logo -->
+  <header class="frame__logo">
+    <a href="#" aria-label="Aperture Home">A</a>
+  </header>
+
+  <!-- Wordmark -->
+  <div class="frame__wordmark">
+    <span>The Septuagint</span>
+  </div>
+
+  <!-- Left sidebar — Counter -->
+  <aside class="frame__sidebar-left">
+    <div class="frame__counter">
+      <span class="current" id="plateCounter">01</span> / 06 — Collection
+    </div>
+  </aside>
+
+  <!-- Right sidebar — Navigation -->
+  <nav class="frame__sidebar-right" aria-label="Main navigation">
+    <ul class="frame__nav">
+      <li><a href="#lookbook">Title Page</a></li>
+      <li><a href="#about">NETS</a></li>
+          </ul>
+  </nav>
+
+  <!-- Bottom frame — Footer -->
+  <footer class="frame__bottom">
+    <span class="frame__credit">&copy; 2026 — Aperture Visual &middot; <a href="https://www.tooplate.com" rel="nofollow" target="_blank">Tooplate</a></span>
+    <ul class="frame__social">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Behance</a></li>
+      <li><a href="#">Vimeo</a></li>
+    </ul>
+  </footer>
+
+  <!-- Mobile bottom nav -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="#lookbook" class="active">
+      <span class="mobile-nav__icon mobile-nav__icon--grid"></span>
+      <span class="mobile-nav__label">Work</span>
+    </a>
+    <a href="#about">
+      <span class="mobile-nav__icon mobile-nav__icon--lens"></span>
+      <span class="mobile-nav__label">Lens</span>
+    </a>
+    <a href="#journal">
+      <span class="mobile-nav__icon mobile-nav__icon--info"></span>
+      <span class="mobile-nav__label">Journal</span>
+    </a>
+    <a href="#contact">
+      <span class="mobile-nav__icon mobile-nav__icon--mail"></span>
+      <span class="mobile-nav__label">Reach</span>
+    </a>
+  </nav>
+
+  <!-- ============================================
+       MAIN CONTENT — The Lookbook
+       ============================================ -->
+  <main class="lookbook" id="lookbook">
+
+    <!-- Hero -->
+    <section class="lookbook__hero">
+      <div class="lookbook__hero-bg">
+        <img src="images/aperture-camera.jpg" alt="" loading="eager">
+      </div>
+      <div class="lookbook__hero-content">
+        <h1 class="lookbook__title">
+          THE BOOK OF
+          <em>DANIEL</em>
+        </h1>
+              </div>
+      <div class="lookbook__scroll-cue">
+        <span>Scroll</span>
+        <div class="lookbook__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Plate 01 -->
+    <section class="lookbook__plate" data-plate="01">
+      <img class="lookbook__plate-image"
+           src="images/architectural-interior.jpg"
+           alt="Architectural interior with natural light flooding through floor-to-ceiling windows"
+           loading="lazy">
+      <div class="lookbook__plate-meta">
+        <div class="lookbook__plate-number">01</div>
+        <h2 class="lookbook__plate-title">The Atrium</h2>
+        <p class="lookbook__plate-caption">Where light becomes material — an exercise in controlled absence.</p>
+      </div>
+    </section>
+
+    <!-- Plate 02 -->
+    <section class="lookbook__plate lookbook__plate--right" data-plate="02">
+      <img class="lookbook__plate-image"
+           src="images/minimalist-interior.jpg"
+           alt="Minimalist interior space with sculptural furniture"
+           loading="lazy">
+      <div class="lookbook__plate-meta">
+        <div class="lookbook__plate-number">02</div>
+        <h2 class="lookbook__plate-title">Still Form</h2>
+        <p class="lookbook__plate-caption">Every surface a decision. Every shadow, intentional.</p>
+      </div>
+    </section>
+
+    <!-- Interstitial quote -->
+    <section class="lookbook__interstitial" id="about">
+      <div class="lookbook__interstitial-inner">
+        <blockquote>A NEW ENGLIS TRANSLATION OF THE SEPTUAGINT</blockquote>
+        <cite>NETS</cite>
+      </div>
+    </section>
+
+    <!-- Plate 03 -->
+    <section class="lookbook__plate" data-plate="03">
+<iframe src="https://ccat.sas.upenn.edu/nets/edition/40-daniel-nets.pdf" width="100%" height="600px" style="border: none;"></iframe>
+      <img class="lookbook__plate-image"
+           src="images/contemporary-residential.jpg"
+           alt="Contemporary residential space with warm tonal palette"
+           loading="lazy">
+      <div class="lookbook__plate-meta">
+        <div class="lookbook__plate-number">03</div>
+              </div>
+    </section>
+
+    <!-- Diptych -->
+    <section class="lookbook__diptych" data-plate="04">
+      <div class="lookbook__diptych-panel">
+        <img src="images/textural-detail.jpg"
+             alt="Textural detail of concrete and timber joinery"
+             loading="lazy">
+        <span class="lookbook__diptych-label">Detail — 04a</span>
+      </div>
+      <div class="lookbook__diptych-panel">
+        <img src="images/natural-stone-surface.jpg"
+             alt="Natural stone surface with dramatic side lighting"
+             loading="lazy">
+        <span class="lookbook__diptych-label">Detail — 04b</span>
+      </div>
+    </section>
+
+    <!-- Plate 05 -->
+    <section class="lookbook__plate lookbook__plate--right" data-plate="05">
+      <img class="lookbook__plate-image"
+           src="images/panoramic-view.jpg"
+           alt="Panoramic view through architectural framework"
+           loading="lazy">
+      <div class="lookbook__plate-meta">
+        <div class="lookbook__plate-number">05</div>
+              </div>
+    </section>
+
+    <!-- Plate 06 -->
+    <section class="lookbook__plate" data-plate="06">
+      <img class="lookbook__plate-image"
+           src="images/evening-interior.jpg"
+           alt="Evening interior with warm ambient lighting"
+           loading="lazy">
+      <div class="lookbook__plate-meta">
+        <div class="lookbook__plate-number">06</div>
+              </div>
+    </section>
+
+   
+    
+  </main>
+
+  <!-- ============================================
+       INTERSECTION OBSERVER — Lens Reveal + Counter
+       ============================================ -->
+    <script src="tooplate-2170-aperture.js"></script>
+</body>
+</html>
